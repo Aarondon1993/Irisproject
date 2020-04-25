@@ -8,5 +8,5 @@ import matplotlib.pyplot as pyplot
 
 df = pd.read_csv("IrisDataset.csv")
 # Using pandas the IrisDataset can be read.
-print (df.describe(include= 'all'))
+print (df.describe())
 
