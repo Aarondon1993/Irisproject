@@ -18,5 +18,34 @@ f = open ('datasetsummary.txt','w')
 # of the .txt file each time to keep it tidy. 
 f.write (desc.to_string())
 # The desc must be converted into a string in order for the write funtion to work.
-df.hist(by= df.species)
+
+a = df ["sepal_length"]
+
+plt.hist(a, bins=30, color= "blue")
+plt.xlabel("Size in centimeters")
+plt.ylabel("Number of occurences")
+plt.title("Size of Iris flowers")
+
+
+b = df ["sepal_width"]
+plt.hist(b, bins=30, color= "green")
+
+
+
+c = df ["petal_length"]
+plt.hist(c, bins=30, color= "red")
+
+
+
+d = df ["petal_width"]
+plt.hist(d, bins=30, color= "yellow")
+
+plt.legend(['sepal_length','sepal_width','petal_length','petal_width'])
 plt.show()
+
+
+
+
+
+
+
