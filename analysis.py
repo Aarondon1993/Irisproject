@@ -10,11 +10,13 @@ df = pd.read_csv("IrisDataset.csv")
 # Using the .read_csv function of pandas the dataset can be read.
 desc= df.groupby('species').describe()
 
-# in order to generate a summary of the dataset contents the df.describe funtion is used.
+# in order to generate a summary of the dataset contents the df.describe function is used.
+# This is used by the groupby function in order to describe the data relative to the particular species.
 f = open ('datasetsummary.txt','w')
 # The variable 'f' is used to open the destination txt file in write mode.
 # Using write mode 'w' this will ensure that the code will overwrite the contents
 # of the .txt file each time to keep it tidy. 
-
 f.write (desc.to_string())
-# The df.describe must be converted into a string in order for the write funtion to work.
+# The desc must be converted into a string in order for the write funtion to work.
+df.hist(by= df.species)
+plt.show()
