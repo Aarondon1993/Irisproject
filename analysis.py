@@ -2,13 +2,14 @@
 # This program is written as a requirement for the Programming and Scripting module in the Data Analytics course.
 import numpy as np
 import pandas as pd 
-import matplotlib.pyplot as pyplot
+from matplotlib import pyplot as plt
 # The above libraries will be used to read the data in the .csv file, summarise the variables
 # and then produce both the histograms and scatter plots.
 
 df = pd.read_csv("IrisDataset.csv")
 # Using the .read_csv function of pandas the dataset can be read.
-desc = (df.describe())
+desc= df.groupby('species').describe()
+
 # in order to generate a summary of the dataset contents the df.describe funtion is used.
 f = open ('datasetsummary.txt','w')
 # The variable 'f' is used to open the destination txt file in write mode.
@@ -17,5 +18,3 @@ f = open ('datasetsummary.txt','w')
 
 f.write (desc.to_string())
 # The df.describe must be converted into a string in order for the write funtion to work.
-
-
