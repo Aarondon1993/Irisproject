@@ -7,6 +7,9 @@ import matplotlib.pyplot as pyplot
 # and then produce both the histograms and scatter plots.
 
 df = pd.read_csv("IrisDataset.csv")
+desc = (df.describe())
+f = open ('datasetsummary.txt','w')
 # Using pandas the IrisDataset can be read.
-print (df.describe())
+f.write (desc.to_string())
+
 
