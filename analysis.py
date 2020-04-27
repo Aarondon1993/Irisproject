@@ -25,14 +25,63 @@ a= df.loc[df.species=="setosa", "sepal_width"]
 b= df.loc[df.species=="versicolor", "sepal_width"]
 c= df.loc[df.species=="virginica", "sepal_width"]
 
-plt.hist(a, color= "g", label= "setosa", alpha= 0.5)
-plt.hist(b, color= "r", label= "versicolor", alpha= 0.5)
-plt.hist(c, color= "b", label= "virginica", alpha= 0.5)
+plt.hist(a, color= "g", label= "setosa", alpha= 0.5, bins=60)
+plt.hist(b, color= "r", label= "versicolor", alpha= 0.5, bins=60)
+plt.hist(c, color= "b", label= "virginica", alpha= 0.5, bins=60)
 plt.title("Measurement of sepal width among species")
-plt.ylabel("Frequency of occurence")
-plt.xlabel("Width in centimeters")
+plt.ylabel("Frequency of Occurence")
+plt.xlabel("Width in Centimeters")
+plt.xticks(np.arange(1.5,5, step= 0.2))
 plt.legend()
+plt.savefig('Measurement of sepal width among species.png')
 plt.show()
+
+a= df.loc[df.species=="setosa", "sepal_length"]
+b= df.loc[df.species=="versicolor", "sepal_length"]
+c= df.loc[df.species=="virginica", "sepal_length"]
+
+plt.hist(a, color= "g", label= "setosa", alpha= 0.5, bins=60)
+plt.hist(b, color= "r", label= "versicolor", alpha= 0.5, bins=60)
+plt.hist(c, color= "b", label= "virginica", alpha= 0.5, bins=60)
+plt.title("Measurement of sepal length among species")
+plt.ylabel("Frequency of Occurence")
+plt.xlabel("Length in Centimeters")
+plt.xticks(np.arange(4,8, step= 0.5))
+plt.legend()
+plt.savefig('Measurement of sepal length among species.png')
+plt.show()
+
+a= df.loc[df.species=="setosa", "petal_length"]
+b= df.loc[df.species=="versicolor", "petal_length"]
+c= df.loc[df.species=="virginica", "petal_length"]
+
+plt.hist(a, color= "g", label= "setosa", alpha= 0.5, bins=60)
+plt.hist(b, color= "r", label= "versicolor", alpha= 0.5, bins=60)
+plt.hist(c, color= "b", label= "virginica", alpha= 0.5, bins=60)
+plt.title("Measurement of petal length among species")
+plt.ylabel("Frequency of Occurence")
+plt.xlabel("Length in Centimeters")
+plt.xticks(np.arange(1,8, step= 0.5))
+plt.legend()
+plt.savefig('Measurement of petal length among species.png')
+plt.show()
+
+a= df.loc[df.species=="setosa", "petal_width"]
+b= df.loc[df.species=="versicolor", "petal_width"]
+c= df.loc[df.species=="virginica", "petal_width"]
+
+plt.hist(a, color= "g", label= "setosa", alpha= 0.5, bins=60)
+plt.hist(b, color= "r", label= "versicolor", alpha= 0.5, bins=60)
+plt.hist(c, color= "b", label= "virginica", alpha= 0.5, bins=60)
+plt.title("Measurement of petal width among species")
+plt.ylabel("Frequency Of Occurence")
+plt.xlabel("Width in Centimeters")
+plt.xticks(np.arange(0,3, step= 0.5))
+plt.legend()
+plt.savefig('Measurement of petal width among species.png')
+plt.show()
+
+
 import seaborn as sns
 
 
