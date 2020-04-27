@@ -19,47 +19,27 @@ f = open ('datasetsummary.txt','w')
 f.write (desc.to_string())
 # The desc must be converted into a string in order for the write funtion to work.
 
-a = df ["sepal_length"]
-
-plt.hist(a, bins=[1,2,3,4,5,6,7,8], color= "blue",)
-plt.xlabel("Length in centimeters")
-plt.ylabel("Number of occurences")
-plt.title("Length of sepals")
-plt.xticks([1,2,3,4,5,6,7,8])
-plt.savefig("Sepal_Length.png")
-plt.show()
 
 
-b = df ["sepal_width"]
-plt.hist(b, bins=[1,2,3,4,5,6,7,8], color= "#5b5682")
+a= df.loc[df.species=="setosa", "sepal_width"]
+b= df.loc[df.species=="versicolor", "sepal_width"]
+c= df.loc[df.species=="virginica", "sepal_width"]
+
+plt.hist(a, color= "g", label= "setosa", alpha= 0.5)
+plt.hist(b, color= "r", label= "versicolor", alpha= 0.5)
+plt.hist(c, color= "b", label= "virginica", alpha= 0.5)
+plt.title("Measurement of sepal width among species")
+plt.ylabel("Frequency of occurence")
 plt.xlabel("Width in centimeters")
-plt.ylabel("Number of occurences")
-plt.title("Width of sepals")
-plt.xticks([1,2,3,4,5,6,7,8])
-plt.savefig("Sepal_Width.png")
+plt.legend()
 plt.show()
+import seaborn as sns
 
 
-c = df ["petal_length"]
-plt.hist(c, bins=[1,2,3,4,5,6,7,8], color= "#b8ba52",)
-plt.xlabel("Length in centimeters")
-plt.ylabel("Number of occurences")
-plt.title("Length of petals")
-plt.xticks([1,2,3,4,5,6,7,8])
-plt.savefig("Petal_Length.png")
+
+
+sns.pairplot(df, hue="species")
 plt.show()
-
-
-d = df ["petal_width"]
-plt.hist(d, bins=[1,2,3,4,5,6,7,8], color= "#7ca15c",)
-plt.xlabel("Width in centimeters")
-plt.ylabel("Number of occurences")
-plt.title("Width of petals")
-plt.xticks([1,2,3,4,5,6,7,8])
-plt.savefig("Petal_Width.png")
-plt.show()
-
-
 
 
 
