@@ -14,6 +14,9 @@ NumPy is a 'fundamental package' for analysing scientifc data using python and i
 ## Observations from the ‘Measurement of petal length among species’
 It can be seen from the histogram titled ‘Measurement of petal length among species’ that the species of Iris that had the greatest petal length was the virginica species. The setosa showed to have the minimum petal length with the versicolor falling between the two. From the histogram it can be seen that the difference in petal length is well distributed between the three species. This means that petal length is a characteristic that could be used to differentiate between species. There is only very slight overlap seen between the species virginica and versicolor with a small number of samples.
 
+## Observations from the ‘Measurement of petal width among species’
+It can be seen from the histogram titled ‘Measurement of petal width among species’ that the data between species is very well distributed. Similar to the petal length measurement the Viriginca species of iris appears to have the wider petals with the setosa species again having the smaller petal width. Similar to the petal length measurement there is slight overlap in a small number of samples between the Virginica and Versicolor. This characteristic would also be considered a good source of differentiation between iris species. 
+
 
 
 
