@@ -19,51 +19,22 @@ f = open ('datasetsummary.txt','w')
 f.write (desc.to_string())
 # The desc must be converted into a string in order for the write funtion to work.
 
-a = df ["sepal_length"]
 
-plt.hist(a, bins=[1,2,3,4,5,6,7,8], color= "blue",)
-plt.xlabel("Length in centimeters")
-plt.ylabel("Number of occurences")
-plt.title("Length of sepals")
-plt.xticks([1,2,3,4,5,6,7,8])
-plt.savefig("Sepal_Length.png")
+
+
+
+
+
+
+
+bins= [0,1,2,3,4,5,6]
+df.hist(bins= bins, xticks= bins)
+
+
+
+
+
 plt.show()
-
-
-b = df ["sepal_width"]
-plt.hist(b, bins=[1,2,3,4,5,6,7,8], color= "#5b5682")
-plt.xlabel("Width in centimeters")
-plt.ylabel("Number of occurences")
-plt.title("Width of sepals")
-plt.xticks([1,2,3,4,5,6,7,8])
-plt.savefig("Sepal_Width.png")
-plt.show()
-
-
-c = df ["petal_length"]
-plt.hist(c, bins=[1,2,3,4,5,6,7,8], color= "#b8ba52",)
-plt.xlabel("Length in centimeters")
-plt.ylabel("Number of occurences")
-plt.title("Length of petals")
-plt.xticks([1,2,3,4,5,6,7,8])
-plt.savefig("Petal_Length.png")
-plt.show()
-
-
-d = df ["petal_width"]
-plt.hist(d, bins=[1,2,3,4,5,6,7,8], color= "#7ca15c",)
-plt.xlabel("Width in centimeters")
-plt.ylabel("Number of occurences")
-plt.title("Width of petals")
-plt.xticks([1,2,3,4,5,6,7,8])
-plt.savefig("Petal_Width.png")
-plt.show()
-
-
-
-
-
-
 
 
 
