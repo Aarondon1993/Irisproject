@@ -8,5 +8,9 @@ The iris data set also know as the Fischer data set was compiled by Ronald Fisch
 ## A brief background on Python.
 The programming language Python [2] can be used to analyse datasets of this type very efficiently. Python is a high level programming language developed by Guido Van Rossum from the Netherlands. Van Rossum soth to develope a language that was placed in between the computer langauges C and shell scripts. He wanted a language that 'felt more like a genuine programming langauge like C but was interpreted easier to use like a shell script without the terrible properties in terms of readability like shell scripts'[3]. After over a year of work van Rossum released his new language as open source. This allowed developers to work on the language and further develope it. Guido van Rossum however held the title of BDFL. This meant that van Rossum had the final say in what was contributed to the language by the developers. BDFL means 'Benevolent dictator for life' [4] and is a term that originated from the Python creator. Van Rossum has since resigned this role. Python is an interpreted language. This means that it is not coverted to machinie code until the actual python program is run. Python has a vast amount of applications. Some of these are web development, computer games, web apps and many more.
 
+## NumPy, Pandas , Matplotlib and Seaborn.
+NumPy is a 'fundamental package' for analysing scientifc data using python and is the foundation on which many other python libraries have been built. An examples of these libraries used in this project are Pandas, Matplotlib and seaborn. Pandas is a library used to create dataframes that can be manipulated and visualised for data analyses.
+
+
 
 
