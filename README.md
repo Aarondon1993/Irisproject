@@ -17,6 +17,14 @@ It can be seen from the histogram titled ‘Measurement of petal length among sp
 ## Observations from the ‘Measurement of petal width among species’
 It can be seen from the histogram titled ‘Measurement of petal width among species’ that the data between species is very well distributed. Similar to the petal length measurement the Viriginca species of iris appears to have the wider petals with the setosa species again having the smaller petal width. Similar to the petal length measurement there is slight overlap in a small number of samples between the Virginica and Versicolor. This characteristic would also be considered a good source of differentiation between iris species. 
 
+## Observations from the ‘Measurement of sepal length among species’
+It can be seen from the histogram titled ‘Measurement of sepal length among species’ that there is a large amount of overlap between species. Due to this fact sepal length would not be considered a reliable characteristic to differentiate between different iris species. Similar to the previous characteristics the virginica appeared to have the longer sepals with the setosa, again having the shorter sepals. The versicolor is again found between the virginica and setosa as being the average between the two however there is overlap between all three species for this characteristic.
+
+## Observations from the ‘Measurement of sepal width among species’
+It can be seen from the histogram ‘Measurement of sepal width among species’ that the setosa species of iris has generally a larger sepal width. This characteristic would be useful when Identifying the setosa species of iris flower however there is a large degree of overlap between the species virginica and versicolor which means that this would not be a useful characteristic for differentiating between these species.
+
+## Conclusion from the analysis of the histograms of all 4 measurements among the 3 species.
+
 
 
 
