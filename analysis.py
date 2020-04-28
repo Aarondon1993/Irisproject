@@ -20,11 +20,12 @@ f.write (desc.to_string())
 # The desc must be converted into a string in order for the write funtion to work.
 
 
-
+# Below the three diffrent species are accessed using the .loc function. This allows us to group by species for each characteristic.
 a= df.loc[df.species=="setosa", "sepal_width"]
 b= df.loc[df.species=="versicolor", "sepal_width"]
 c= df.loc[df.species=="virginica", "sepal_width"]
-
+# The below code plots the histrogram adding a specific colour for each species and a label. A title along with x and y axis labels are added. Finally
+# a legend is is made. The code for saving the figure is included before the plot.show as plot.show clears the previous code.
 plt.hist(a, color= "g", label= "setosa", alpha= 0.5, bins=60)
 plt.hist(b, color= "r", label= "versicolor", alpha= 0.5, bins=60)
 plt.hist(c, color= "b", label= "virginica", alpha= 0.5, bins=60)
@@ -35,7 +36,7 @@ plt.xticks(np.arange(1.5,5, step= 0.2))
 plt.legend()
 plt.savefig('Measurement of sepal width among species.png')
 plt.show()
-
+# The same code is then repeated for each characteristic.
 a= df.loc[df.species=="setosa", "sepal_length"]
 b= df.loc[df.species=="versicolor", "sepal_length"]
 c= df.loc[df.species=="virginica", "sepal_length"]
@@ -83,12 +84,15 @@ plt.show()
 
 
 import seaborn as sns
-
+# The library seaborn is imported
 
 
 
 sns.pairplot(df, hue="species")
+# A pair plot is generated as the most efficient way of plotting scatter plots of all variables against eachother.
+# The data is grouped by species using 'hue'
 plt.show()
+# The pair plot is then displayed for analysis
 
 
 
