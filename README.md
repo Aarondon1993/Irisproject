@@ -11,7 +11,7 @@ The programming language Python [2] can be used to analyse datasets of this type
 # NumPy, Pandas , Matplotlib and Seaborn.
 NumPy is a 'fundamental package' for analysing scientifc data using python and is the foundation on which many other python libraries have been built. An examples of these libraries used in this project are Pandas, Matplotlib and seaborn. Pandas is a library used to create dataframes that can be manipulated and visualised for data analyses.
 
-# Histogram observations
+# Histogram and scatter plot observations
 
 ## Observations from the ‘Measurement of petal length among species’
 It can be seen from the histogram titled ‘Measurement of petal length among species’ that the species of Iris that had the greatest petal length was the virginica species. The setosa showed to have the minimum petal length with the versicolor falling between the two. From the histogram it can be seen that the difference in petal length is well distributed between the three species. This means that petal length is a characteristic that could be used to differentiate between species. There is only very slight overlap seen between the species virginica and versicolor with a small number of samples.
@@ -25,13 +25,13 @@ It can be seen from the histogram titled ‘Measurement of sepal length among sp
 ## Observations from the ‘Measurement of sepal width among species’
 It can be seen from the histogram ‘Measurement of sepal width among species’ that the setosa species of iris has generally a larger sepal width. This characteristic would be useful when Identifying the setosa species of iris flower however there is a large degree of overlap between the species virginica and versicolor which means that this would not be a useful characteristic for differentiating between these species.
 
-## Conclusion from the analysis of the histograms of all 4 measurements among the 3 species.
-To conclude, the species that shows the greatest variation between the other two species is the setosa.
 
-# Scatter plot observations
+
+## Scatter plot observations
 Scatter plots of each pair of variables were generated using the .pairplot function of the seaborn library. This function allows you to generate a series of scatter plots for each pair of variables in the iris dataset.  These scatter plots clearly demonstrate a high degree of difference between the setosa species and the two other iris species. It also effectively demonstrates the fact that the versicolor species and viriginica species are quite similar in all characteristics with the viriginica samples generally being distributed further to the right and higher on the plots demonstrating a much larger flower. The clearest distinction that can be made between the virginica and the versicolor is in the sepal_length vs the petal_width plot. A plot displaying ‘univariate distribution’ can be seen running through the set of plots. These plots are useful for as they show the degree of variation between the different species based on the characteristics in the column.
 
-
+## Conclusion from the analysis of the histograms of all 4 measurements among the 3 species.
+To conclude, the species that shows the greatest variation between the other two species is the setosa and because of this it would more than likely be the easiest of the three species to identify manly because of its wider petals in comparison to the other 3 features. From analysing the plots it can be concluded that the best characterisitics to identifity an iris species is the petal length and petal width. These characteristics show the least amount of overlap in all plots and thus these characteristics appear to be unique to the vast majoritity of the particular species. As can be seen in the scatter plots the loci of each sample of each species is situated together with enough space between species to diffrentiate.
 
 
 
