@@ -35,4 +35,4 @@ To conclude, the species that shows the greatest variation between the other two
 
 
 
-![](images/Images/IRIS_SETOSA.png)
+![](images/IRIS_SETOSA.png)
