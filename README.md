@@ -2,14 +2,16 @@
 ## Aaron Donnelly- G00299531
 An Iris data set was obtained from the following link: http://www.randomservices.org/random/data/Fisher.html
 
-## Origins of the Iris data set
+# Origins of the Iris data set
 The iris data set also know as the Fischer data set was compiled by Ronald Fischer in the 1930's. This data set is a complilation of diffrent sepal and petal lengths and widths of various types of iris flowers. This dataset is widely used by the computer science community as an introduction to data analysis and/or machine learning. The data was first published in the scientific journal 'Annals of human genetics'in the year 1936. Fischer titiled his paper 'The use of multiple measurements in taxonomic problems'. Fischer took 50 samples of three particular particular spieces of flower, Iris setosa, I. versicolor and Iris virginica. Both Iris setosa and I. versicolor were found to be living in the same colony and the data obatined for these two particular species were provided to Fischer by Dr E.Anderson.[1]
 
-## A brief background on Python.
+# A brief background on Python.
 The programming language Python [2] can be used to analyse datasets of this type very efficiently. Python is a high level programming language developed by Guido Van Rossum from the Netherlands. Van Rossum soth to develope a language that was placed in between the computer langauges C and shell scripts. He wanted a language that 'felt more like a genuine programming langauge like C but was interpreted easier to use like a shell script without the terrible properties in terms of readability like shell scripts'[3]. After over a year of work van Rossum released his new language as open source. This allowed developers to work on the language and further develope it. Guido van Rossum however held the title of BDFL. This meant that van Rossum had the final say in what was contributed to the language by the developers. BDFL means 'Benevolent dictator for life' [4] and is a term that originated from the Python creator. Van Rossum has since resigned this role. Python is an interpreted language. This means that it is not coverted to machinie code until the actual python program is run. Python has a vast amount of applications. Some of these are web development, computer games, web apps and many more.
 
-## NumPy, Pandas , Matplotlib and Seaborn.
+# NumPy, Pandas , Matplotlib and Seaborn.
 NumPy is a 'fundamental package' for analysing scientifc data using python and is the foundation on which many other python libraries have been built. An examples of these libraries used in this project are Pandas, Matplotlib and seaborn. Pandas is a library used to create dataframes that can be manipulated and visualised for data analyses.
+
+# Histogram observations
 
 ## Observations from the ‘Measurement of petal length among species’
 It can be seen from the histogram titled ‘Measurement of petal length among species’ that the species of Iris that had the greatest petal length was the virginica species. The setosa showed to have the minimum petal length with the versicolor falling between the two. From the histogram it can be seen that the difference in petal length is well distributed between the three species. This means that petal length is a characteristic that could be used to differentiate between species. There is only very slight overlap seen between the species virginica and versicolor with a small number of samples.
@@ -24,6 +26,11 @@ It can be seen from the histogram titled ‘Measurement of sepal length among sp
 It can be seen from the histogram ‘Measurement of sepal width among species’ that the setosa species of iris has generally a larger sepal width. This characteristic would be useful when Identifying the setosa species of iris flower however there is a large degree of overlap between the species virginica and versicolor which means that this would not be a useful characteristic for differentiating between these species.
 
 ## Conclusion from the analysis of the histograms of all 4 measurements among the 3 species.
+To conclude, the species that shows the greatest variation between the other two species is the setosa.
+
+# Scatter plot observations
+Scatter plots of each pair of variables were generated using the .pairplot function of the seaborn library. This function allows you to generate a series of scatter plots for each pair of variables in the iris dataset.  These scatter plots clearly demonstrate a high degree of difference between the setosa species and the two other iris species. It also effectively demonstrates the fact that the versicolor species and viriginica species are quite similar in all characteristics with the viriginica samples generally being distributed further to the right and higher on the plots demonstrating a much larger flower. The clearest distinction that can be made between the virginica and the versicolor is in the sepal_length vs the petal_width plot. A plot displaying ‘univariate distribution’ can be seen running through the set of plots. These plots are useful for as they show the degree of variation between the different species based on the characteristics in the column.
+
 
 
 
