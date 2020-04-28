@@ -36,3 +36,10 @@ To conclude, the species that shows the greatest variation between the other two
 
 
 ![](images/IRIS_SETOSA.png)
+Iris Setosa image taken from: http://www.perennials.com/plants/iris-setosa-var-arctica.html
+
+![](Images/IRIS_VERSICOLOR.jpg)
+Iris Versicolor image taken from: https://www.plant-world-seeds.com/store/view_seed_item/3664
+
+![](Images/IRIS_VIRGINICA.png)
+Iris Virginica image taken from: https://bakerenvironmentalnursery.com/product/iris-virginica-southern-blue-flag-iris/
