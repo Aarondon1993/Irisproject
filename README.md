@@ -63,3 +63,6 @@ Iris Versicolor image taken from: https://www.plant-world-seeds.com/store/view_s
 
 ![](Images/IRIS_VIRGINICA.png)
 Iris Virginica image taken from: https://bakerenvironmentalnursery.com/product/iris-virginica-southern-blue-flag-iris/
+
+![](Images/Pairplot.png)
+Pairplot image taken and saved from the pairplot function in the analysis.py program
